@@ -1,51 +1,237 @@
-.gallery img{
-    width: 100%;
+body{
+padding: 0;
+margin: 0;
+font-family: helvetica;
 }
 
-h2{
-    font-family: impact,fantasy;
-    text-align: center;
-    font-size: 30px;
-    color: cornflowerblue;
-    font-style: italic;
+/*===========  HEADER ===========*/
+#header{
+position: fixed;
+top: 0px;
+left: 0px;
+z-index: 500;
+width: 100%;
+height: 80px;
+background-image: url('images/wood-bg.png');
+background-repeat: repeat-x;
+
 }
 
-h4{
-    font-family: impact,fantasy;
-    font-size: 20px;
-    color: cornflowerblue;
+#header img{
+    display: block;
+    margin: auto;
+    height: 70%;
+    padding-top: 20px;
 }
 
-p{
-    font-family: helvetica,sans-serif;
+/*===========  TOP-TABS ===========*/
+
+#tab-top{
+position: fixed;
+top: 80px;
+left: 0;
+z-index: 500;
+width: 100%;
+height: 40px;
+background-color: darkgreen;
+
 }
 
-#menu{
+#tab-top a{
+float: left;
+display: block;
+width: 33%;
+height: 35px;
+font-weight: 700;
+color: white;
+text-align: center;
+text-decoration: none;
+padding-top: 12px;
+}
+
+
+/*===========  main-home ===========*/
+
+#main-home{
+    margin-top: 200px;
+}
+
+
+
+/*===========  TABS-BOTTOM ===========*/
+#TABS-BOTTOM{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 500;
     width: 100%;
     height: 40px;
-    background-color: cornflowerblue;
+    background-color: forestgreen;
+}
+
+
+#TABS-BOTTOM a{
+    float: left;
+    display: block;
+    width: 50%;
+    height: 35px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    text-decoration: none;
     padding-top: 12px;
 }
 
-#menu a{
-    color: #ffffff;
-    font-family: helvetica,sans-serif;
-    font-size: 18px;
+
+/*===========  MAIN===========*/
+#MAIN{
+    margin-top: 119px;
+    background: url('images/map-blur.png');
+    background-repeat: repeat;
+
+}
+
+#CONTENT{
+    padding: 10px;
+    padding-bottom: 50px;
+}
+
+/*===========  info-box===========*/
+a.info-box{
+    text-decoration-color: rgb(2, 2, 46);
+    background: rgba(255, 255, 255, .8);
+    width: 90%;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-top: 12px;
+    padding: 5PX;
+    text-align:justify;
+    image-resolution: 100%;
+}
+
+.info-box img{
+    height: 90px;
+    margin: 5px;
+    float: left;
+}
+
+.info-box h3{
+    padding: 0;
+    margin-bottom: 0;
+    width: 70%;
+    color:blueviolet;
+    float: left;
+    text-align: left;
+}
+
+.info-box p{
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    color: #131313;
+}
+
+.info-box img.right{
+    float:none;
+    margin-top: 25px;
+    height: 40px;
+}
+
+/*===========  INFO-BOX-FULL===========*/
+#INFO-BOX-FULL{
+    background: rgba(216, 200, 200, 0.8);
+    width: 77%;
+    display: block;
+    margin: auto;
+    margin-top:lid #131313;
+    padding: 100px;
+    align-content: center;
+    height: fit-content;
+    image-resolution: 100%;
+}
+#INFO-BOX-FULL img{
+    width: 90%;
+    image-resolution: 100%;
+    align-content: center;
+
+
+}
+#INFO-BOX-FULL H3{
+    text-align: center;
+}
+#INFO-BOX-FULL P{
+    text-align:left;
+    text-decoration-line:initial;
+    width: 75%;
+    text-wrap: 100%;
+    text-size-adjust: 90px;
+    text-decoration-style: solid ;
+    color:chocolate;
+
+}
+
+#INFO-BOX-FULL UL{
+    text-align:left;
+}
+
+#INFO-BOX-FULL LI{
+    text-align:start;
+    color: rgb(219, 47, 241);
+}
+
+/*=========== weather ===========*/
+ 
+img.INFO-BOX-FULL-weather-icon{
+    height: 50px;
+    width: 45px !important;
+    margin: 20px;
+    float: left;
+
+}
+
+
+h1.INFO-BOX-FULL-WEATHER-ICON{
+    font-size: 100;
+    font-weight: 200;
+    padding: 0;
+    margin: 0;
+}
+
+table{
+    width: 100%;
+}
+
+td{
+    border-top: solid #131313;
+}
+
+/*=========== FORM ===========*/
+
+input{
+    width: 100%;
+    height: 25PX;
+    margin: 12PX 0;
+    border: 1px solid #131313;
+
+}
+
+textarea{
+    width: 100%;
+    height: 65px;
+    margin: 12px 0;
+    border: 1PX solid #131313;
+}
+
+.button{
+    display: block;
+    width: 100%;
+    background-color: forestgreen;
     text-decoration: none;
-    font-weight: 800;
-    padding-left: 20px;
-    padding-right: 20px;
-
-}
-
-#menu a:hover{
-color:#5077bd;
-}
-
-#menu{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    text-decoration: #5077bd;
-    font-weight: 500;
-
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 12px 0;
+    padding: 12px 0;
 }
