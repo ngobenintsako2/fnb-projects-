@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+     <p id="outputtext"></p>
+
+     <script>
+        var text1 = "10";
+        var text2 = "5";
+        var num1 = stringtonumber(text1);
+        var num2 = stringtonumber(text2);
+        if(isNaN(num1) || isNaN(num2)){
+            document.getElementById("outputtext").innerHTML = "you have not entered a valid number please try again."
+        } else{
+              document.getElementById("outputtext").innerHTML = num1 + num2;
+        }
+       function stringtonumber(text){
+        return parseInt(text);
+       }
+     
+     </script>
+    </body>
+</html>
